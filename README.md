@@ -76,12 +76,13 @@
 
 <p>Após realizar a instação das dependencias, você pode realizar o download deste repositório e mover a pasta para o local correto:</p>
 <p><b>Windows</b>: A pasta padrão vai depender do programa utilizado, no caso do WampServer fica em c:\wamp\www ou htdocs</p>
-<p><b>Linux</b>: Existem duas formas rápidas de configurar o projeto, você pode mover os arquivos de DENTRO da pasta validador_mensagens para a pasta /var/www/html ou então mover a pasta inteira (validador_mensagens) para /var/www/ e editar as configurações do apache:</p>
+<p><b>Linux</b>: Existem duas formas rápidas de configurar o projeto, você pode mover os arquivos de DENTRO da pasta validador-mensagens-php para a pasta /var/www/html ou então mover a pasta inteira (validador-mensagens-php) para /var/www/ e editar as configurações do apache:</p>
 
 ```bash
 # nano /etc/apache2/sites-enabled/000-default.conf
 ```
-E então trocar o valor de DocumentRoot que deve ser <b>/var/www/html</b> para <b>/var/www/validador_mensagens</b> e então reiniciar o apache novamente
+E então trocar o valor de DocumentRoot que deve ser <b>/var/www/html</b> para <b>/var/www/validador-mensagens-php</b>. Você também pode criar uma nova configuração em um arquivo separado especificando somente o valor de DocumentRoot como /var/www/validador-mensagens-php e então habilita-lo no apache.
+Após realizar a configuração conforme sua preferência é necessário reiniciar o apache novamente:
 
 ```bash
 # service apache2 restart
@@ -111,7 +112,7 @@ E executar o seguinte comando:
     * HTML 5;
     * Javascript;
     * PHP 8;
-  * Tenologias:
+  * Tecnologias:
     * Ajax;
     * Apache 2;
     * Bootstrap 4;
