@@ -58,7 +58,8 @@
 <p>Para executar o projeto é necessário ter Apache ou outro servidor instalado em sua máquina, a maioria dos ambientes Linux já vem com ele instalado, para ambientes Windows você pode utilizar algum programa como WampServer ou XAMPP. É necessário também ter o php8.0 e o php8.0-curl instalados em seu computador, em ambientes Windows programas como WampServer instalam automaticamente o PHP na sua máquina, e para os ambientes Linux:</p>
 
 ```bash
-# apt-get install php8.0 php8.0-curl
+# apt-get install php8.0
+# apt-get install php8.0-curl
 ```
 
 <p>Após realizar a instalação, será necessário habilitar o mod PHP no Apache (Somente Linux):</p>
