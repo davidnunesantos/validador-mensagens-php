@@ -58,19 +58,19 @@
 <p>Para executar o projeto é necessário ter Apache ou outro servidor instalado em sua máquina, a maioria dos ambientes Linux já vem com ele instalado, para ambientes Windows você pode utilizar algum programa como WampServer ou XAMPP. É necessário também ter o php8.0 e o php8.0-curl instalados em seu computador, em ambientes Windows programas como WampServer instalam automaticamente o PHP na sua máquina, e para os ambientes Linux:</p>
 
 ```bash
-\# apt-get install php8.0 php8.0-curl
+# apt-get install php8.0 php8.0-curl
 ```
 
 <p>Após realizar a instalação, será necessário habilitar o mod PHP no Apache (Somente Linux):</p>
 
 ```bash
-\# a2enmod php8.0
+# a2enmod php8.0
 ```
 
 <p>E então reiniciar o serviço do apache (Somente Linux):</p>
 
 ```bash
-\# service apache2 restart
+# service apache2 restart
 ```
 
 <p>Após realizar a instação das dependencias, você pode realizar o download deste repositório e mover a pasta para o local correto:</p>
@@ -78,12 +78,12 @@
 <p><b>Linux</b>: Existem duas formas rápidas de configurar o projeto, você pode mover os arquivos de DENTRO da pasta validador_mensagens para a pasta /var/www/html ou então mover a pasta inteira (validador_mensagens) para /var/www/ e editar as configurações do apache:</p>
 
 ```bash
-\# nano /etc/apache2/sites-enabled/000-default.conf
+# nano /etc/apache2/sites-enabled/000-default.conf
 ```
 E então trocar o valor de DocumentRoot que deve ser <b>/var/www/html</b> para <b>/var/www/validador_mensagens</b> e então reiniciar o apache novamente
 
 ```bash
-\# service apache2 restart
+# service apache2 restart
 ```
 
 <p>Após realizar estes procedimentos, basta abrir um navegador e acessar http://localhost/</p>
@@ -93,13 +93,13 @@ E então trocar o valor de DocumentRoot que deve ser <b>/var/www/html</b> para <
 <p>Após realizar as configurações necessárias e instalação do projeto, para realizar os testes basta abrir o terminal do linux e navegar até a pasta onde o projeto se encontra:</p>
 
 ```bash
-\# cd /var/www/validador_mensagens
+# cd /var/www/validador_mensagens
 ```
 
 E executar o seguinte comando:
 
 ```bash
-\# ./vendor/bin/phpunit ./src/tests
+# ./vendor/bin/phpunit ./src/tests
 ```
 
 <h2 id="tecnologias">Tecnologias utilizadas</h2>
